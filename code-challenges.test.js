@@ -144,7 +144,7 @@ const hand3 = [5, 5, 5, 5, 4]
 
 
 
-// a describe method that lists the name of the function OR naming of the particular test.
+//a describe method that lists the name of the function OR naming of the particular test.
 describe('numb', () => {
 
     // a test/it method, nested within the describe block, that in plain words, describes that the function does.
@@ -172,6 +172,7 @@ describe('numb', () => {
 //  x x x y y
 // [0,1,2,3,4]
 // not sure why its working i think it has to do with my test of syntax
+// giving undefined
 
 
 const numb = (array) => {
@@ -181,10 +182,36 @@ if ([...new Set(array)].length === 2 && array.length === 5){
 }
 
 }
-
-
+//----------all testsrun
 // Test Suites: 1 failed, 1 total
 // Tests:       1 failed, 2 passed, 3 total
+// Snapshots:   0 total
+// Time:        1.828 s
+
+//----------error
+// ✓ that takes in a string and returns a coded message. The coded message converts 'a' to 4, 'e' to 3, 'i' to 1, and 'o' to 0. (12 ms)
+// newArr
+//   ✓ that takes in an array of words and a single letter and returns all the words that contain that particular letter. (2 ms)
+// numb
+//   ✕ that takes in an array of 5 numbers and determines whether or not the array is a full house (8 ms)
+
+// ● numb › that takes in an array of 5 numbers and determines whether or not the array is a full house
+
+//   expect(received).toEqual(expected) // deep equality
+
+//   Expected: true
+//   Received: undefined
+
+//     152 |   
+//     153 |       //an expect method, nested within the test block, calling on the hello() function, followed by the .toEqual() matcher that checks the expected output of the function return.
+//   > 154 |       expect(numb(hand1)).toEqual(true)
+//         |                           ^
+//     155 |       expect(numb(hand2)).toEqual(false)
+//     156 |       expect(numb(hand3)).toEqual(false)
+
+
+
+//----------------old code
 
 // const fullHouse = [array] => {
 //     array.sort((a,b) => a-b);

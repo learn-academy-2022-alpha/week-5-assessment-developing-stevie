@@ -62,9 +62,6 @@ describe("code", () => {
 
 
 
-
-
-
 //------------------------------------old code and snips
 // if (string.inculudes('a', 'A')) {
 //     return string.replace('aA', '4')
@@ -76,7 +73,6 @@ describe("code", () => {
 //     return string.replace('iI', '1')
 // }if{
 //     return string
-
 
 
 
@@ -182,11 +178,15 @@ if ([...new Set(array)].length === 2 && array.length === 5){
 }
 
 }
-//----------all testsrun
+
+
+//----------all tests runs
 // Test Suites: 1 failed, 1 total
 // Tests:       1 failed, 2 passed, 3 total
 // Snapshots:   0 total
 // Time:        1.828 s
+
+
 
 //----------error
 // ✓ that takes in a string and returns a coded message. The coded message converts 'a' to 4, 'e' to 3, 'i' to 1, and 'o' to 0. (12 ms)
